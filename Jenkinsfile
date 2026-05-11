@@ -1,15 +1,12 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven'
-    }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'YOUR_GITHUB_REPO_URL'
+                git branch: 'master', url: 'http://github.com/ankitabukkigar-max/MavenJenkinsPipeline.git'
             }
         }
 
